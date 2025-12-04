@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #fdd6e0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #ff66b2;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .message {
+    margin-top: 40px;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  #romantic-message {
+    color: #ff3399;
+  }
+  
+  .heart {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    clip-path: polygon(50% 0%, 100% 25%, 75% 100%, 25% 100%, 0% 25%);
+    animation: floatUp 3s infinite ease-in-out;
+  }
+  
+  @keyframes floatUp {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-150px);
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes randomFloat {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-200px);
+      opacity: 0.7;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes moveRandomly {
+    0% {
+      transform: translateX(0) translateY(0);
+    }
+    100% {
+      transform: translateX(300px) translateY(-300px);
+    }
+  }
+  

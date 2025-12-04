@@ -1,0 +1,55 @@
+/* General Styles 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container 
+.container {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Header 
+.header h1 {
+    color: #333;
+}
+
+/* Login options 
+.login-options h2 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Button Style 
+.login-btn {
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Option container 
+.option {
+    margin: 20px;
+}
+*/

@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "../../Bootstrap"
+		},
+		{
+			"path": "../../C Code"
+		},
+		{
+			"path": "../../CSS"
+		},
+		{
+			"path": "../../HTML"
+		},
+		{
+			"path": "../../HTML-CSS"
+		},
+		{
+			"path": "../../notes"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "project"
+	}
+}

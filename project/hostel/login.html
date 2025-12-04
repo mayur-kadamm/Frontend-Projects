@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Student Housing Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="log.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="list.html">Listings</a></li>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login-section">
+            <h1>Login</h1>
+            <form action="submit_login.php" method="post">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="register.html">Register here</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Student Housing Finder. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('account')">Account</a></li>
+                <li><a href="#" onclick="showPage('hostel')">Hostel Information</a></li>
+                <li><a href="#" onclick="showPage('location')">Location</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="page">
+            <h1>Welcome to Hostel Information</h1>
+            <p>Find the best hostel for your needs and budget.</p>
+        </section>
+
+        <section id="account" class="page hidden">
+            <h1>Account Page</h1>
+            <p>Manage your account details here.</p>
+        </section>
+
+        <section id="hostel" class="page hidden">
+            <h1>Hostel Information</h1>
+            <p>Details about hostels, including rent and facilities, will be provided here.</p>
+        </section>
+
+        <section id="location" class="page hidden">
+            <h1>Location</h1>
+            <p>Find the best location for your hostel and explore the neighborhood.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hostel Information. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            var pages = document.querySelectorAll('.page');
+            pages.forEach(function(page) {
+                page.classList.add('hidden');
+            });
+
+            // Show the selected page
+            var selectedPage = document.getElementById(pageId);
+            if (selectedPage) {
+                selectedPage.classList.remove('hidden');
+            }
+        }
+
+        // Show the home page by default
+        showPage('home');
+    </script>
+</body>
+</html>
